@@ -51,7 +51,7 @@ OPTION_NAMES = {
     "F": "𝐓𝐄𝐄𝐍 𝐈𝐍𝐃𝐈𝐀 𝐆𝐈𝐑𝐋💦",
     "G": "𝗦𝗣𝗔 𝗟𝗘𝗔𝗞𝗦💦",
     "H": "𝐈𝐍𝐒𝐓𝐀 𝐋𝐄À𝐊𝐒👄",
-    "I": "𝗔𝗡𝗜𝗠𝗔𝗟_𝗖0𝗥𝗡💦",
+    "I": "𝗔𝗡𝗜𝗠𝗔𝗟-𝗖0𝗥𝗡💦",
     "J": "𝙏e𝙡u𝙜𝙪 𝙇𝙚𝙖𝙠𝙨💦",
     "K": "SLEEPING PILLS😪",
     "L": "𝐂𝐇!𝐋𝐃-C0𝐑𝐍💦 8500+ 📷",
@@ -210,7 +210,7 @@ async def clear_product_msgs(chat_id: int, context: ContextTypes.DEFAULT_TYPE) -
 async def send_catalogue(chat_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send catalogue photo (or text fallback) with option buttons."""
     markup  = option_keyboard()
-    caption = "📋  Our Service Catalogue*\n\n𝘛𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘱𝘳𝘦𝘮𝘪𝘶𝘮 𝘢𝘥𝘶𝘭𝘵 𝘦𝘯𝘵𝘦𝘳𝘵𝘢𝘪𝘯𝘮𝘦𝘯𝘵 𝘱𝘭𝘢𝘵𝘧𝘰𝘳𝘮 𝘰𝘧𝘧𝘦𝘳𝘪𝘯𝘨 𝘢 𝘥𝘪𝘷𝘦𝘳𝘴𝘦, 𝘤𝘶𝘳𝘢𝘵𝘦𝘥 𝘭𝘪𝘣𝘳𝘢𝘳𝘺 𝘰𝘧 𝘩𝘪𝘨𝘩-𝘲𝘶𝘢𝘭𝘪𝘵𝘺 𝘤𝘰𝘯𝘵𝘦𝘯𝘵\n\nPlease select an option:"
+    caption = "📋 *Our Service Catalogue*\n\n𝘛𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘱𝘳𝘦𝘮𝘪𝘶𝘮 𝘢𝘥𝘶𝘭𝘵 𝘦𝘯𝘵𝘦𝘳𝘵𝘢𝘪𝘯𝘮𝘦𝘯𝘵 𝘱𝘭𝘢𝘵𝘧𝘰𝘳𝘮 𝘰𝘧𝘧𝘦𝘳𝘪𝘯𝘨 𝘢 𝘥𝘪𝘷𝘦𝘳𝘴𝘦, 𝘤𝘶𝘳𝘢𝘵𝘦𝘥 𝘭𝘪𝘣𝘳𝘢𝘳𝘺 𝘰𝘧 𝘩𝘪𝘨𝘩-𝘲𝘶𝘢𝘭𝘪𝘵𝘺 𝘤𝘰𝘯𝘵𝘦𝘯𝘵\n\nPlease select an option:"
 
     if CATALOGUE_PHOTO:
         await context.bot.send_photo(
